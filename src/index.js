@@ -70,6 +70,15 @@ export const getFlooroCeil = (number) => {
  */
 export const randomizer = (from, to) => {
 
-    return Math.floor(Math.random() * (to - from + 1)) + from;
+    while(true){
+        let maxRandom = (Math.floor(Math.random() * (to+1)));
+        if (maxRandom < 2){
+            continue
+        } else {
+            return maxRandom;
+        }
+    }
+
+    //return Math.floor(Math.random() * (to - from + 1)) + from;
 
 };
