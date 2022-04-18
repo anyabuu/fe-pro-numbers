@@ -72,13 +72,11 @@ export const randomizer = (from, to) => {
 
     while(true){
         let maxRandom = (Math.floor(Math.random() * (to+1)));
-        if (maxRandom < 2){
+        if (maxRandom < from){
             continue
         } else {
             return maxRandom;
         }
     }
-
-    //return Math.floor(Math.random() * (to - from + 1)) + from;
 
 };
