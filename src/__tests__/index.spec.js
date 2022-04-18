@@ -44,7 +44,7 @@ describe('randomizer()', () => {
     set.add(randomNumber);
     describe(`with ${randomNumber} at ${Math.random()}`, () => {
       it('should return value with right range', () => {
-        expect(randomNumber >= from && randomNumber <= to).toStrictEqual(true);
+        expect().toStrictEqual(true);
       });
     });
   });
