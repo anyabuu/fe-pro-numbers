@@ -71,7 +71,7 @@ export const getFlooroCeil = (number) => {
 export const randomizer = (from, to) => {
 
 
-    let fullRandom = Math.floor(from + Math.random() * (to + 1 - from));
+    let fullRandom = from + Math.floor(Math.random() * (to + 1 - from));
 
     return fullRandom;
 };
