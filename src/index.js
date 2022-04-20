@@ -8,9 +8,7 @@
  * @returns {number}
  */
 export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
-
     return  Math.min(minFirst, minSecond) * Math.max(maxFirst, maxSecond);
-
 };
 
 /**
@@ -21,11 +19,8 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
  * @returns {number}
  */
 export const getSquareOfCircle = (radius) => {
-
     let result = Math.PI * Math.pow(radius, 2);
-
     return result;
-
 };
 
 /**
@@ -37,9 +32,7 @@ export const getSquareOfCircle = (radius) => {
  * @returns {number}
  */
 export const getFixedValue = (number, accuracy) => {
-
-    return +(number.toFixed(accuracy));
-
+    return Math.round(number * Math.pow(10, accuracy))/Math.pow(10, accuracy);
 };
 
 /**
@@ -49,15 +42,12 @@ export const getFixedValue = (number, accuracy) => {
  * @returns {number}
  */
 export const getFlooroCeil = (number) => {
-
     let fullNumber = Math.trunc(number);
-
     if(fullNumber % 2 == 0){
         return Math.floor(number)
     } else {
         return Math.ceil(number)
     }
-
 };
 
 /**
@@ -69,7 +59,6 @@ export const getFlooroCeil = (number) => {
  * @returns {number}
  */
 export const randomizer = (from, to) => {
-
     while(true){
         let maxRandom = (Math.floor(Math.random() * (to + 1)));
         if (maxRandom < from){
@@ -78,5 +67,4 @@ export const randomizer = (from, to) => {
             return maxRandom;
         }
     }
-
 };
